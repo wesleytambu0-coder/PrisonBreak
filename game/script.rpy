@@ -15,14 +15,7 @@ label start:
 
     "And i found  myself  near a bank "
 
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
-
-    #show eileen happy
-
-    # These display lines of dialogue.
-    scene hostage at full_screen
+    scene hostage at full_screen with fade 
     scoffield "Everybody! Down!"
     scene vaut at full_screen
     scoffield "YOU! Open the vaut!"
@@ -31,5 +24,13 @@ label start:
     scene banker at full_screen
     hostage "I cant the manager is not here"
     scene police at full_screen
-    "the "
+    "the police arrived and surrounded scoffield"
+    define police = Character("Police")
+    police "hands up! and turn around!"
+    scene handsup at full_screen with dissolve
+    scene handsupp at full_screen with fade
+    scene car at full_screen
+    police "drop your weapons now!!!"
+    
+
     # This ends the game.: return
