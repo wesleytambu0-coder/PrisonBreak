@@ -33,6 +33,8 @@ label start:
     police "drop your weapons now!!!"
     scene weapons at full_screen with fade 
     scene weaponss at full_screen with dissolve 
-    
+    scene weaponsss at full_screen with dissolve 
+    scene weaponssss at full_screen with dissolve
+    scene weaponsssss at full_screen with dissolve
 
     # This ends the game.: return
